@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package ejerciciouniversidad;
+import java.util.ArrayList;
 
 /**
  *
@@ -12,8 +13,8 @@ package ejerciciouniversidad;
 public class University {
 
     public University(){
-        Student students[]=new Student[20];
-        Module modules[]=new Module[50];
+        ArrayList<Student> Students;
+        ArrayList<Module> modules;
     }
     public static void main(String[] args) {
         

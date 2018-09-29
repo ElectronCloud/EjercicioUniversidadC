@@ -4,21 +4,21 @@
  * and open the template in the editor.
  */
 package ejerciciouniversidad;
-
+import java.util.ArrayList;
 /**
  *
  * @author Laura M
  */
 public class Student {
     private String name;
-    private Module takes[];
+    private ArrayList<Module>takes;
 
-    public Student(String name, Module takes[]) {
+    public Student(String name, ArrayList<Module> takes) {
         this.name = name;
-        this.takes=takes;
-        Grade grades[]=new Grade[5];
+        this.takes = takes;
+        ArrayList<Grade>grades;
     }
-
+    
     public String getName() {
         return name;
     }
@@ -27,11 +27,13 @@ public class Student {
         this.name = name;
     }
 
-    public Module[] getTakes() {
+    public ArrayList<Module> getTakes() {
         return takes;
     }
 
-    public void setTakes(Module[] takes) {
+    public void setTakes(ArrayList<Module> takes) {
         this.takes = takes;
     }
+
+    
 }

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package ejerciciouniversidad;
-
+import java.util.ArrayList;
 /**
  *
  * @author Laura M
@@ -12,12 +12,12 @@ package ejerciciouniversidad;
 public class Module {
     private String lecturer;
     private String name;
-    private Grade grades[];
+    private ArrayList<Grade>grades;
 
-    public Module(String lecturer, String name, Grade grades[]) {
+    public Module(String lecturer, String name, ArrayList<Grade> grades) {
         this.lecturer = lecturer;
         this.name = name;
-        this.grades=grades;
+        this.grades = grades;
     }
 
     public String getLecturer() {
@@ -34,6 +34,14 @@ public class Module {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public ArrayList<Grade> getGrades() {
+        return grades;
+    }
+
+    public void setGrades(ArrayList<Grade> grades) {
+        this.grades = grades;
     }
     
 }

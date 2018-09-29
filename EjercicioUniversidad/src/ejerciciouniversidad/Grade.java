@@ -12,6 +12,7 @@ package ejerciciouniversidad;
 public class Grade {
     private int mark;
     private Module module;
+    
     public Grade(int mark, Module module){
         this.mark=mark;
         this.module=module;
